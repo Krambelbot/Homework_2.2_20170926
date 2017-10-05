@@ -1,9 +1,9 @@
 import json
-
+from pprint import pprint
 
 with open('Cook_book.json') as recipes:
     cook_book = json.load(recipes)
-
+    # pprint(cook_book)
 
 def get_shop_list_by_dishes(dishes, person_count):
     shop_list = {}
